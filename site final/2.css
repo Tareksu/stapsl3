@@ -1,0 +1,95 @@
+/* RESET */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Segoe UI', sans-serif;
+}
+
+/* FOND GLOBAL */
+body {
+	height: 100vh;
+	background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+	color: white;
+	text-align: center;
+	padding-top: 50px;
+}
+
+/* TITRES */
+h1 {
+	font-size: 2.5rem;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	
+	/* effet glow */
+	color: #00ffe0;
+	text-shadow: 0 0 10px #00ffe0,
+	             0 0 20px #00ffe0,
+	             0 0 40px #00ffe0;
+}
+
+/* H2 */
+h2 {
+	margin: 30px 0 20px;
+	font-size: 1.8rem;
+	color: #ffffff;
+}
+
+/* LIGNE */
+hr {
+	width: 60%;
+	margin: 20px auto;
+	border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* LISTE */
+ul {
+	list-style: none;
+	margin-top: 20px;
+}
+
+/* ELEMENTS LISTE */
+li {
+	margin: 15px 0;
+}
+
+/* LIENS STYLE BOUTONS */
+a {
+	text-decoration: none;
+	color: white;
+	font-size: 1.2rem;
+	padding: 12px 25px;
+	border-radius: 30px;
+	display: inline-block;
+
+	background: linear-gradient(45deg, #00c6ff, #0072ff);
+	transition: all 0.3s ease;
+
+	box-shadow: 0 0 10px rgba(0, 198, 255, 0.6);
+}
+
+/* HOVER ANIMÉ */
+a:hover {
+	transform: scale(1.1);
+	background: linear-gradient(45deg, #ff00cc, #3333ff);
+
+	box-shadow: 0 0 20px #ff00cc,
+	            0 0 40px #3333ff;
+}
+
+/* ANIMATION APPARITION */
+body {
+	animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
